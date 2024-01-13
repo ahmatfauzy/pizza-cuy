@@ -1,0 +1,73 @@
+html {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  color: white;
+}
+
+li {
+  padding: 10px;
+}
+
+select {
+  margin-right: 10px;
+}
+
+.a {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .a {
+    display: none;
+  }
+
+  select {
+    margin-left: 7px;
+  }
+
+  .navbar-nav {
+    background-color: rgb(158, 158, 158);
+  }
+
+  #contact {
+    margin-top: -20px;
+  }
+}
+
+#img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+#keterangan {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  #keterangan {
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin-top: -100px;
+  }
+}
